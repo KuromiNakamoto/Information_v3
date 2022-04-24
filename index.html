@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info (Version 3)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/snowflake.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/plugins/jquery.min.js"></script>
+</head>
+<body>
+    <div id="loading" class="focused">
+        <div class="flex-center" style="position:relative;top:45%;">
+            <i class="fa-solid fa-spinner fa-spin" id="loading_icon"></i>
+        </div>
+    </div>
+
+    <div class="snowflakes" aria-hidden="true" id="loadSnow"></div>
+
+    <div class="content" style="--data-bg:url(../img/bg-animate.gif);">
+        <div class="flex-center card-user-margin-top">
+            <div class="card-user">
+                <div class="flex-center"><div class="card-user-avatar" style="--data-avatar: url(../img/avatar_anya.webp);--data-border-color:#dc3546a2;--data-box-shadow-color:#dc3546c0;"></div></div>
+                <div class="card-content">
+                    <h1 class="card-title" style="--data-color:#dc3545;">港 なんかじ <div class="card-title-tick" style="--data-bg:#007bff;--data-text-color:#fff;"><i class="fa-solid fa-check icon"></i> <div class="tooltip"><span class="tooltip-text">Tích xanh</span></div></div></h1>
+                    <p class="card-text-center card-text-custom" style="--custom-font-size:16px;--custom-font-weight:400;margin-top: 0.5rem;">Tôi tên là <strong>Đoàn Gia Bảo</strong>. Hiện đang là học sinh và là một <strong>Website Developer</strong>.</p>
+                    <p class="card-text-center card-text-custom" style="--custom-font-size:16px;--custom-font-weight:400;margin-top: 0.5rem;">Sở thích của tôi là viết code, chơi game.</p>
+                    <div class="card-intro">
+                        <p class="card-text-intro"><i class="fa-solid fa-location-dot icon"></i> Ninh Bình</p>
+                        <p class="card-text-intro"><i class="fa-solid fa-cake-candles icon"></i> 2009</p>
+                    </div>
+                    <div class="card-mxh">
+                        <button href="https://www.facebook.com/Minato.Nankaji/" class="card-mxh-button custom" style="--btn-bg-color:#007bff;--btn-text-color:#fff;--btn-box-shadow-color:#007bffa4;" onclick="window.open($(this).attr('href'));"><i class="fab fa-facebook-f icon-mxh"></i> <div class="tooltip"><span class="tooltip-text">Facebook</span></div></button>
+                        <button href="https://www.youtube.com/channel/UCN8P_0MM7fbjpj_n1qnnoaQ" class="card-mxh-button custom" style="--btn-bg-color:#dc3545;--btn-text-color:#fff;--btn-box-shadow-color:#dc3545a4;" onclick="window.open($(this).attr('href'));"><i class="fab fa-youtube icon-mxh"></i> <div class="tooltip"><span class="tooltip-text">Youtube</span></div></button>
+                        <button href="https://github.com/Anizer2509" class="card-mxh-button custom" style="--btn-bg-color:#343a40;--btn-text-color:#fff;--btn-box-shadow-color:#343a40a4;" onclick="window.open($(this).attr('href'));"><i class="fab fa-github icon-mxh"></i> <div class="tooltip"><span class="tooltip-text">Github</span></div></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
